@@ -2,17 +2,23 @@ import React, { forwardRef } from 'react'
 import { useState } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import JSP from "../pictures/JS.png"
+import HTMLP from "../pictures/HTML.png" 
+import CSSP from "../pictures/CSS.png"
+import PY3P from "../pictures/AWS.png"
+import GITP from "../pictures/GIT.png"
+import AWSP from "../pictures/AWS.png"
 
 function Skills(props, ref) {
   let [skillsIcons, setSkillsIcon] = useState([])
 
   let Skills = {
-    'JavaScript': '/pictures/JS.png',
-    'HTML': '/pictures/HTML.png',
-    'CSS': '/pictures/CSS.png',
-    'Python3': '/pictures/AWS.png',
-    'git / SCM': '/pictures/GIT.png',
-    'AWS Cloud infrastructure': '/pictures/AWS.png'
+    'JavaScript': JSP,
+    'HTML': HTMLP,
+    'CSS': CSSP,
+    'Python3': PY3P,
+    'git / SCM': GITP,
+    'AWS Cloud infrastructure': AWSP
   }
 
 

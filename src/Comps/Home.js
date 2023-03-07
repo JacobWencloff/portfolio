@@ -1,10 +1,11 @@
 import React, { forwardRef } from 'react'
+import Headshot from "../pictures/headshot.jpg"
 
 function Home(props, ref) {
   return (
     <div ref={ref} id="home">
         <div className='home-content'>
-            <img id='headshot-image' src='/pictures/headshot.jpg' ></img>
+            <img id='headshot-image' src={Headshot} ></img>
             <div id='home-header'>
               <h1 id='home-title'>
                   Jacob Wencloff
