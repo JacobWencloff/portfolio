@@ -4,6 +4,7 @@ import Home from './Comps/Home';
 import About from './Comps/About';
 import Skills from './Comps/Skills';
 import Projects from './Comps/Projects';
+import Contact from './Comps/Contact';
 
 
 
@@ -12,6 +13,7 @@ function App() {
   const aboutRef = useRef(null)
   const skillsRef = useRef(null)
   const projectsRef = useRef(null)
+  const contactRef = useRef(null)
 
 
   function handleClick(e){
@@ -55,6 +57,7 @@ function App() {
       <About ref={aboutRef} />
       <Skills ref={skillsRef} />
       <Projects ref={projectsRef} />
+      <Contact ref={contactRef} />
     </div>
   );
 }
