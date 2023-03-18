@@ -1,8 +1,12 @@
 import React from 'react'
-import  {Form, FloatingLabel }  from 'react-bootstrap'
+import  {Form, FloatingLabel, Button }  from 'react-bootstrap'
+import linkedin from '../pictures/linkedin.png'
+import github from '../pictures/github.png'
 export default function Contact() {
   return (
-    <div>
+    <div className='contact'>
+      <h3>Contact Me</h3>
+    <div className='contactForm'>
         <FloatingLabel
             controlId='floatingEmail'
             label="Email address"
@@ -16,6 +20,18 @@ export default function Contact() {
             <FloatingLabel controlId='floatingLastName' label='lastName'>
                 <Form.Control type='Text' placeholder='Last Name' />
             </FloatingLabel>
+            <Button variant='primary' type='submit'>
+              Submit
+            </Button>
+    </div>
+    <div className='contactPics'>
+     <a href='https://www.linkedin.com/in/jacob-wencloff-se/' target='_blank'>
+      <img src={linkedin}></img>
+      </a>
+      <a href='https://github.com/JacobWencloff' target='_blank'>
+        <img src={github}></img>
+      </a>
+    </div>
     </div>
   )
 }
