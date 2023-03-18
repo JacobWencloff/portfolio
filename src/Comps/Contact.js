@@ -1,10 +1,12 @@
-import React from 'react'
+import React ,{forwardRef} from 'react'
 import  {Form, FloatingLabel, Button }  from 'react-bootstrap'
 import linkedin from '../pictures/linkedin.png'
 import github from '../pictures/github.png'
-export default function Contact() {
+
+function Contact(props, ref) {
   return (
-    <div className='contact'>
+    <div ref={ref} id='Contact'>
+     <div className='contact'>
       <h3>Contact Me</h3>
     <div className='contactForm'>
         <FloatingLabel
@@ -33,5 +35,8 @@ export default function Contact() {
       </a>
     </div>
     </div>
+    </div>
   )
 }
+
+export default forwardRef(Contact)

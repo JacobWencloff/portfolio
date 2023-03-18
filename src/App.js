@@ -23,13 +23,15 @@ function App() {
         break;
       case 'About':
         aboutRef.current?.scrollIntoView({behavior: 'smooth', block:'center'})
-        console.log('about')
         break;
       case 'Skills':
         skillsRef.current?.scrollIntoView({behavior: 'smooth', block:'center'})
         break;
       case 'Projects':
         projectsRef.current?.scrollIntoView({behavior: 'smooth', block:'center'})
+        break;
+      case 'Contact':
+        contactRef.current?.scrollIntoView({behavior: 'smooth', block:'center'})
         break;
       }
   }
@@ -50,6 +52,9 @@ function App() {
           </p>
           <p onClick={handleClick} id='Projects'>
            Projects
+          </p>
+          <p onClick={handleClick} id='Contact'>
+            Contact Me
           </p>
         </div>
       </header>
