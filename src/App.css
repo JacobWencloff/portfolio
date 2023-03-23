@@ -5,6 +5,11 @@
 /* Soft White Comp #F5F6FB  */
 /* Teal #008080 */
 
+
+a:hover{
+  color: black;
+} 
+
 .App {
   text-align: center;
   height: fit-content;
